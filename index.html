@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEKKEN 8 | Official Fan Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-family:Orbitron;
+font-size:32px;
+font-weight:900;
+color:#ff2d2d;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff4040;
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+align-items:center;
+padding:0 8%;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url("https://images6.alphacoders.com/131/1315224.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:650px;
+}
+
+.hero h1{
+
+font-family:Orbitron;
+font-size:80px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#ff3030;
+}
+
+.hero p{
+
+font-size:20px;
+line-height:1.8;
+margin-bottom:35px;
+color:#ddd;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:18px 42px;
+background:#ff2d2d;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.35s;
+box-shadow:0 0 30px rgba(255,0,0,.4);
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+background:white;
+color:#111;
+
+}
+
+section{
+
+padding:100px 8%;
+
+}
+
+.title{
+
+font-size:45px;
+font-family:Orbitron;
+margin-bottom:50px;
+text-align:center;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+overflow:hidden;
+border-radius:20px;
+background:#111;
+transition:.5s;
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.02);
+
+}
+
+.card img{
+
+width:100%;
+height:420px;
+object-fit:cover;
+transition:.6s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.1);
+
+}
+
+.card-content{
+
+padding:25px;
+
+}
+
+.card h2{
+
+font-family:Orbitron;
+margin-bottom:10px;
+
+}
+
+.features{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+
+}
+
+.feature{
+
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.feature h3{
+
+margin-bottom:15px;
+color:#ff3434;
+
+}
+
+footer{
+
+padding:30px;
+text-align:center;
+background:#111;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TEKKEN 8</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Characters</a>
+<a href="#">Gallery</a>
+<a href="#">Features</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>ENTER THE <span>KING OF IRON FIST</span> TOURNAMENT</h1>
+
+<p>
+Experience the next generation of fighting games with breathtaking visuals,
+intense combat, and legendary fighters. Master every move and dominate your opponents.
+</p>
+
+<a href="#" class="btn">Play Now</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Legendary Fighters</h1>
+
+<div class="gallery">
+
+<div class="card">
+
+<img src="https://images3.alphacoders.com/131/1315222.jpg">
+
+<div class="card-content">
+
+<h2>Jin Kazama</h2>
+
+<p>
+The fearless warrior returns with incredible new abilities and devastating combos.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images7.alphacoders.com/131/1315225.jpg">
+
+<div class="card-content">
+
+<h2>Kazuya Mishima</h2>
+
+<p>
+Unleash the Devil Gene and experience the legendary rivalry like never before.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images5.alphacoders.com/131/1315223.jpg">
+
+<div class="card-content">
+
+<h2>Epic Battles</h2>
+
+<p>
+Fight across cinematic arenas powered by Unreal Engine 5 visuals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Game Features</h1>
+
+<div class="features">
+
+<div class="feature">
+
+<h3>Ultra HD Graphics</h3>
+
+<p>
+Experience stunning 4K-quality visuals, dynamic lighting, and realistic character models.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>32+ Fighters</h3>
+
+<p>
+Play with legendary characters and master unique fighting styles.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Heat System</h3>
+
+<p>
+A brand-new aggressive combat mechanic that changes every match.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Online Battles</h3>
+
+<p>
+Challenge players worldwide with ranked matches and tournaments.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Tekken 8 Fan Landing Page | Designed with HTML & CSS
+
+</footer>
+
+</body>
+</html>
