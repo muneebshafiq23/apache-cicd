@@ -1,0 +1,26 @@
+name: Deploy Local Apache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: docker build -t my-apache .
+
+      - name: Stop Old Container
+        run: docker rm -f apache || true
+
+      - name: Run New Container
+        run: |
+          docker run -d \
+            --name apache \
+            -p 80:80 \
+            my-apache
