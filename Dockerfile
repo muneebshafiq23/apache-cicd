@@ -1,12 +1,12 @@
-FROM alpine
+FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get install -y apache2 && \
     apt-get clean && \
-    rm -rf /var/lib/apt/list/*
+    rm -rf /var/lib/apt/lists/*
 
-COPY ..
+COPY . /var/www/html/
 
 EXPOSE 80
 
-CMD ["apachectl","-D","FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]
