@@ -1,4 +1,3 @@
-````markdown
 # Automated CI/CD Pipeline for Game Website using GitHub Actions, Docker & AWS EC2
 
 
@@ -249,4 +248,3 @@ https://www.linkedin.com/in/muneebshafiq23
 # ⭐ If you found this project useful
 
 Please consider giving this repository a ⭐ on GitHub.
-````
